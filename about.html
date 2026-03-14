@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — Dumpster Drop KC</title>
+  <meta name="description" content="Meet John and Blyth Everhart, owners of Dumpster Drop. Family owned dumpster rental in Peculiar, MO serving the south KC metro.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <a href="/" class="header__logo">Dumpster <span>Drop</span></a>
+      <nav class="header__nav" id="nav">
+        <a href="/" class="header__link">Home</a>
+        <a href="/about.html" class="header__link header__link--active">About</a>
+        <a href="/dumpsters.html" class="header__link">Dumpsters</a>
+        <a href="/service-areas.html" class="header__link">Service Areas</a>
+        <a href="/contact.html" class="header__link">Contact</a>
+        <a href="tel:8168163767" class="header__phone">(816) 816-3767</a>
+        <a href="https://embed.survcart.com?type=landing&co=13ut0EZG4WG3hWWyNAr7&wsid=N8kKZLtywSlGoTr9LDem&sel=ojN9nrIqokP8r1iL5Cd7" class="btn btn--primary header__cta">Book Now</a>
+      </nav>
+      <button class="header__toggle" id="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-header__title">About Us</h1>
+      <p class="page-header__subtitle">Family owned and operated out of Peculiar, Missouri.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT CONTENT -->
+  <section class="section section--white">
+    <div class="container">
+      <div class="about-grid">
+        <div>
+          <!-- Replace src with your own image: images/owners.jpg -->
+          <img class="about-image" src="images/owners.jpg" alt="John and Blyth Everhart, owners of Dumpster Drop">
+        </div>
+        <div>
+          <p class="section-label">Who We Are</p>
+          <h2 class="section-title">John &amp; Blyth Everhart</h2>
+          <p class="section-subtitle" style="margin-bottom: 16px;">Before starting Dumpster Drop, John worked as a machinist for Kansas City Southern Railroad for 15 years, then left the railroad in 2019 to become a self-employed real estate investor. Blyth is a licensed, practicing pharmacist since 2009 and became a licensed real estate agent in 2022.</p>
+          <p class="section-subtitle" style="margin-bottom: 16px;">As a family of seven, we understand the need for reliability, ease of scheduling, and the importance of work being done right the first time.</p>
+          <p class="section-subtitle">We pride ourselves on honesty and respect. We will do what we say. There will never be any hidden fees or penalties. If you have questions about anything, give us a call.</p>
+
+          <div class="about-hours">
+            <p class="section-label">Business Hours</p>
+            <div class="about-hours__row">
+              <span class="about-hours__day">Monday – Friday</span>
+              <span>8:00 AM – 5:00 PM</span>
+            </div>
+            <div class="about-hours__row">
+              <span class="about-hours__day">Saturday – Sunday</span>
+              <span>9:00 AM – 12:00 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2 class="cta-banner__title">Ready to Get Started?</h2>
+      <p class="cta-banner__subtitle">Book online in minutes or call us directly.</p>
+      <a href="https://embed.survcart.com?type=landing&co=13ut0EZG4WG3hWWyNAr7&wsid=N8kKZLtywSlGoTr9LDem&sel=ojN9nrIqokP8r1iL5Cd7" class="btn btn--dark">Book a Dumpster</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">Dumpster <span>Drop</span></div>
+          <p class="footer__desc">Family owned and operated dumpster rental serving the south Kansas City metro from Peculiar, Missouri.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Pages</div>
+          <div class="footer__links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="/dumpsters.html">Dumpsters</a>
+            <a href="/service-areas.html">Service Areas</a>
+            <a href="/contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__heading">Contact</div>
+          <div class="footer__links">
+            <a href="tel:8168163767">(816) 816-3767</a>
+            <a href="mailto:info@dumpsterdropkc.com">info@dumpsterdropkc.com</a>
+            <span>Peculiar, MO 64078</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        &copy; 2026 Dumpster Drop. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('nav-toggle');
+    const nav = document.getElementById('nav');
+    toggle.addEventListener('click', () => nav.classList.toggle('header__nav--open'));
+  </script>
+
+</body>
+</html>

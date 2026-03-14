@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Dumpster Drop KC</title>
+  <meta name="description" content="Contact Dumpster Drop for dumpster rentals in the south KC metro. Call (816) 816-3767, email info@dumpsterdropkc.com, or send us a message.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <a href="/" class="header__logo">Dumpster <span>Drop</span></a>
+      <nav class="header__nav" id="nav">
+        <a href="/" class="header__link">Home</a>
+        <a href="/about.html" class="header__link">About</a>
+        <a href="/dumpsters.html" class="header__link">Dumpsters</a>
+        <a href="/service-areas.html" class="header__link">Service Areas</a>
+        <a href="/contact.html" class="header__link header__link--active">Contact</a>
+        <a href="tel:8168163767" class="header__phone">(816) 816-3767</a>
+        <a href="https://embed.survcart.com?type=landing&co=13ut0EZG4WG3hWWyNAr7&wsid=N8kKZLtywSlGoTr9LDem&sel=ojN9nrIqokP8r1iL5Cd7" class="btn btn--primary header__cta">Book Now</a>
+      </nav>
+      <button class="header__toggle" id="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-header__title">Contact Us</h1>
+      <p class="page-header__subtitle">Call, text, or send us a message. We respond fast.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--white">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- INFO -->
+        <div>
+          <p class="section-label">Get In Touch</p>
+          <h2 class="section-title" style="margin-bottom: 32px;">We're Here to Help</h2>
+
+          <div class="contact-info">
+            <div class="contact-info__item">
+              <div class="contact-info__icon">📞</div>
+              <div>
+                <div class="contact-info__label">Phone</div>
+                <div class="contact-info__value"><a href="tel:8168163767">(816) 816-3767</a></div>
+              </div>
+            </div>
+            <div class="contact-info__item">
+              <div class="contact-info__icon">💬</div>
+              <div>
+                <div class="contact-info__label">Text to Order</div>
+                <div class="contact-info__value"><a href="sms:8168163767">(816) 816-3767</a></div>
+                <p style="font-size: 13px; color: var(--color-text-light); margin-top: 4px;">Send your email, service address, and dumpster size. We'll send an invoice.</p>
+              </div>
+            </div>
+            <div class="contact-info__item">
+              <div class="contact-info__icon">✉</div>
+              <div>
+                <div class="contact-info__label">Email</div>
+                <div class="contact-info__value"><a href="mailto:info@dumpsterdropkc.com">info@dumpsterdropkc.com</a></div>
+              </div>
+            </div>
+            <div class="contact-info__item">
+              <div class="contact-info__icon">📍</div>
+              <div>
+                <div class="contact-info__label">Location</div>
+                <div class="contact-info__value">Peculiar, MO 64078</div>
+                <p style="font-size: 13px; color: var(--color-text-light); margin-top: 4px;">Cass County, Missouri</p>
+              </div>
+            </div>
+            <div class="contact-info__item">
+              <div class="contact-info__icon">🕐</div>
+              <div>
+                <div class="contact-info__label">Hours</div>
+                <div class="contact-info__value">Mon–Fri 8AM–5PM</div>
+                <p style="font-size: 13px; color: var(--color-text-light); margin-top: 4px;">Sat–Sun 9AM–12PM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FORM -->
+        <div>
+          <!--
+            FORM BACKEND OPTIONS:
+            1. Formspree (free tier: 50 submissions/mo): Replace YOUR_FORM_ID below
+               Sign up at https://formspree.io, create a form, get the endpoint.
+            2. Cloudflare Pages Functions: Add a serverless function for form handling.
+            3. Simple mailto: Remove the form and just link to email.
+
+            Current setup uses Formspree as a placeholder.
+          -->
+          <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+              <label for="service">What Do You Need?</label>
+              <select id="service" name="service">
+                <option value="">Select an option</option>
+                <option value="10-yard">10 Yard Dumpster</option>
+                <option value="15-yard">15 Yard Dumpster</option>
+                <option value="20-yard">20 Yard Dumpster</option>
+                <option value="not-sure">Not Sure — Need Help</option>
+                <option value="other">Other Question</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Service address, project details, questions..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">Dumpster <span>Drop</span></div>
+          <p class="footer__desc">Family owned and operated dumpster rental serving the south Kansas City metro from Peculiar, Missouri.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Pages</div>
+          <div class="footer__links">
+            <a href="/">Home</a>
+            <a href="/about.html">About</a>
+            <a href="/dumpsters.html">Dumpsters</a>
+            <a href="/service-areas.html">Service Areas</a>
+            <a href="/contact.html">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__heading">Contact</div>
+          <div class="footer__links">
+            <a href="tel:8168163767">(816) 816-3767</a>
+            <a href="mailto:info@dumpsterdropkc.com">info@dumpsterdropkc.com</a>
+            <span>Peculiar, MO 64078</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        &copy; 2026 Dumpster Drop. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('nav-toggle');
+    const nav = document.getElementById('nav');
+    toggle.addEventListener('click', () => nav.classList.toggle('header__nav--open'));
+  </script>
+
+</body>
+</html>
