@@ -29,26 +29,65 @@
   <!-- HERO -->
   <section class="hero">
     <div class="container">
-      <p class="hero__label">Peculiar, MO &bull; South KC Metro</p>
-      <h1 class="hero__title">Dumpster Rental Made Simple</h1>
-      <p class="hero__subtitle">Family owned and operated. One call, honest pricing, fast delivery. We handle the waste so you can focus on the project.</p>
-      <div class="hero__actions">
-        <a href="https://embed.survcart.com?type=landing&co=13ut0EZG4WG3hWWyNAr7&wsid=N8kKZLtywSlGoTr9LDem&sel=ojN9nrIqokP8r1iL5Cd7" class="btn btn--primary">Book a Dumpster</a>
-        <a href="tel:8168163767" class="btn btn--outline">Call (816) 816-3767</a>
-      </div>
-      <div class="hero__stat-row">
-        <div>
-          <div class="hero__stat-value">24hr</div>
-          <div class="hero__stat-label">Target Delivery</div>
+      <div class="hero__columns">
+
+        <!-- Left: Copy -->
+        <div class="hero__left">
+          <p class="hero__label">Peculiar, MO &bull; South KC Metro</p>
+          <h1 class="hero__title">Dumpster Rental Made Simple</h1>
+          <p class="hero__subtitle">Family owned and operated. One call, honest pricing, fast delivery. We handle the waste so you can focus on the project.</p>
+          <div class="hero__actions">
+            <a href="https://embed.survcart.com?type=landing&co=13ut0EZG4WG3hWWyNAr7&wsid=N8kKZLtywSlGoTr9LDem&sel=ojN9nrIqokP8r1iL5Cd7" class="btn btn--primary">Book a Dumpster</a>
+            <a href="tel:8168163767" class="btn btn--outline">Call (816) 816-3767</a>
+          </div>
+          <div class="hero__stat-row">
+            <div>
+              <div class="hero__stat-value">24hr</div>
+              <div class="hero__stat-label">Target Delivery</div>
+            </div>
+            <div>
+              <div class="hero__stat-value">3</div>
+              <div class="hero__stat-label">Dumpster Sizes</div>
+            </div>
+            <div>
+              <div class="hero__stat-value">25mi</div>
+              <div class="hero__stat-label">Service Radius</div>
+            </div>
+          </div>
         </div>
-        <div>
-          <div class="hero__stat-value">3</div>
-          <div class="hero__stat-label">Dumpster Sizes</div>
+
+        <!-- Right: Booking Form Card -->
+        <div class="hero__right">
+          <div class="hero__form-card">
+            <p class="hero__form-title">Get a Dumpster Fast</p>
+            <p class="hero__form-sub">Fill out the form and we'll be in touch same day.</p>
+            <form class="hero__form" action="https://embed.survcart.com?type=landing&co=13ut0EZG4WG3hWWyNAr7&wsid=N8kKZLtywSlGoTr9LDem&sel=ojN9nrIqokP8r1iL5Cd7" method="get" target="_blank">
+              <div class="hero__form-group">
+                <label class="hero__form-label" for="hero-name">Name</label>
+                <input class="hero__form-input" type="text" id="hero-name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="hero__form-group">
+                <label class="hero__form-label" for="hero-phone">Phone</label>
+                <input class="hero__form-input" type="tel" id="hero-phone" name="phone" placeholder="(816) 000-0000" required>
+              </div>
+              <div class="hero__form-group">
+                <label class="hero__form-label" for="hero-city">City</label>
+                <input class="hero__form-input" type="text" id="hero-city" name="city" placeholder="Your city" required>
+              </div>
+              <div class="hero__form-group">
+                <label class="hero__form-label" for="hero-size">Dumpster Size</label>
+                <select class="hero__form-input hero__form-select" id="hero-size" name="size" required>
+                  <option value="" disabled selected>Select a size</option>
+                  <option value="10-yard">10 Yard</option>
+                  <option value="15-yard">15 Yard</option>
+                  <option value="20-yard">20 Yard</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn--primary hero__form-btn">Book Now</button>
+            </form>
+          </div>
         </div>
-        <div>
-          <div class="hero__stat-value">25mi</div>
-          <div class="hero__stat-label">Service Radius</div>
-        </div>
+
       </div>
     </div>
   </section>
