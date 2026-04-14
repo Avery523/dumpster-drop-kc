@@ -910,14 +910,41 @@ button { font-family: inherit; cursor: pointer; border: none; }
     top: var(--header-height);
     left: 0;
     right: 0;
-    background: var(--color-dark);
-    padding: 24px;
-    gap: 20px;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
+    background: #ffffff;
+    padding: 20px 24px 28px;
+    gap: 4px;
+    border-bottom: 2px solid #e0e0e0;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.10);
+    z-index: 999;
+  }
+
+  .header__nav--open .header__link {
+    color: #222222;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 15px;
+  }
+
+  .header__nav--open .header__link:last-of-type {
+    border-bottom: none;
+  }
+
+  .header__nav--open .header__link:hover,
+  .header__nav--open .header__link--active {
+    color: var(--color-accent);
+  }
+
+  .header__nav--open .header__phone {
+    display: block;
+    color: #222222;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 15px;
   }
 
   .header__nav--open .header__cta {
     align-self: flex-start;
+    margin-top: 8px;
   }
 
   .hero { padding: 60px 0 80px; }
