@@ -950,3 +950,22 @@ button { font-family: inherit; cursor: pointer; border: none; }
   .hero__actions { flex-direction: column; }
   .hero__actions .btn { width: 100%; justify-content: center; }
 }
+
+/* --- FAQ --- */
+.faq { margin-top: 8px; }
+.faq__item { border-bottom: 1px solid #e0e0e0; padding: 16px 0; }
+.faq__item:first-child { border-top: 1px solid #e0e0e0; }
+.faq__question {
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-text);
+}
+.faq__question::-webkit-details-marker { display: none; }
+.faq__question::after { content: "+"; font-size: 20px; color: var(--color-accent); }
+details[open] .faq__question::after { content: "\2212"; }
+.faq__answer { padding: 12px 0 4px; color: var(--color-text-light); line-height: 1.7; font-size: 15px; }
