@@ -61,7 +61,8 @@
           <div class="hero__form-card">
             <p class="hero__form-title">Get a Dumpster Fast</p>
             <p class="hero__form-sub">Fill out the form and we'll be in touch same day.</p>
-            <form class="hero__form" action="https://embed.survcart.com?type=landing&co=13ut0EZG4WG3hWWyNAr7&wsid=N8kKZLtywSlGoTr9LDem&sel=ojN9nrIqokP8r1iL5Cd7" method="get" target="_blank">
+            <form class="hero__form" id="hero-booking-form" action="https://formspree.io/f/mjgjkkkn" method="POST">
+              <input type="hidden" name="_subject" value="New Dumpster Booking Request - Dumpster Drop KC">
               <div class="hero__form-group">
                 <label class="hero__form-label" for="hero-name">Name</label>
                 <input class="hero__form-input" type="text" id="hero-name" name="name" placeholder="Your name" required>
@@ -85,6 +86,10 @@
               </div>
               <button type="submit" class="btn btn--primary hero__form-btn">Book Now</button>
             </form>
+            <div class="hero__form-thanks" id="hero-form-thanks" style="display:none;">
+              <p class="hero__form-thanks-title">&#x2705; We got your request!</p>
+              <p class="hero__form-thanks-text">Thanks — we'll call or text you shortly to confirm your dumpster drop. Questions? Call us at <a href="tel:8168163767">(816) 816-3767</a>.</p>
+            </div>
           </div>
         </div>
 
@@ -439,6 +444,37 @@
     toggle.addEventListener('click', () => {
       nav.classList.toggle('header__nav--open');
     });
+
+    // Hero booking form — Formspree AJAX submission
+    const bookingForm = document.getElementById('hero-booking-form');
+    const thankYou = document.getElementById('hero-form-thanks');
+    if (bookingForm) {
+      bookingForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const btn = bookingForm.querySelector('button[type="submit"]');
+        btn.textContent = 'Sending…';
+        btn.disabled = true;
+        try {
+          const res = await fetch(bookingForm.action, {
+            method: 'POST',
+            body: new FormData(bookingForm),
+            headers: { 'Accept': 'application/json' }
+          });
+          if (res.ok) {
+            bookingForm.style.display = 'none';
+            thankYou.style.display = 'block';
+          } else {
+            btn.textContent = 'Book Now';
+            btn.disabled = false;
+            alert('Something went wrong. Please call us at (816) 816-3767.');
+          }
+        } catch {
+          btn.textContent = 'Book Now';
+          btn.disabled = false;
+          alert('Something went wrong. Please call us at (816) 816-3767.');
+        }
+      });
+    }
   </script>
 
 </body>
