@@ -56,6 +56,34 @@
     ]
   }
   </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11433989105"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-11433989105');
+    gtag('config', 'G-087SK0LDNT');
+  </script>
+  <script>
+    gtag('config', 'AW-11433989105/hFoiCIragsEaEPGnk8wq', {
+      'phone_conversion_number': '816-816-3767'
+    });
+  </script>
+  <script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+      'send_to': 'AW-11433989105/JHdRCPyM8M8ZEPGnk8wq',
+      'event_callback': callback
+    });
+    return false;
+  }
+  </script>
 </head>
 <body>
 
@@ -70,7 +98,7 @@
         <a href="service-areas.html" class="header__link header__link--active">Service Areas</a>
         <a href="contact.html" class="header__link">Contact</a>
         <a href="tel:8168163767" class="header__phone">(816) 816-3767</a>
-        <a href="https://embed.survcart.com?type=landing&co=13ut0EZG4WG3hWWyNAr7&wsid=N8kKZLtywSlGoTr9LDem&sel=ojN9nrIqokP8r1iL5Cd7" class="btn btn--primary header__cta">Book Now</a>
+        <a href="https://embed.survcart.com?type=landing&co=13ut0EZG4WG3hWWyNAr7&wsid=N8kKZLtywSlGoTr9LDem&sel=ojN9nrIqokP8r1iL5Cd7" class="btn btn--primary header__cta" onclick="return gtag_report_conversion(this.href)">Book Now</a>
       </nav>
       <button class="header__toggle" id="nav-toggle" aria-label="Toggle menu">&#9776;</button>
     </div>
@@ -131,7 +159,7 @@
     <div class="container">
       <h2 class="cta-banner__title">In Our Area?</h2>
       <p class="cta-banner__subtitle">Book online and we'll have a dumpster to you fast.</p>
-      <a href="https://embed.survcart.com?type=landing&co=13ut0EZG4WG3hWWyNAr7&wsid=N8kKZLtywSlGoTr9LDem&sel=ojN9nrIqokP8r1iL5Cd7" class="btn btn--dark">Book a Dumpster</a>
+      <a href="https://embed.survcart.com?type=landing&co=13ut0EZG4WG3hWWyNAr7&wsid=N8kKZLtywSlGoTr9LDem&sel=ojN9nrIqokP8r1iL5Cd7" class="btn btn--dark" onclick="return gtag_report_conversion(this.href)">Book a Dumpster</a>
     </div>
   </section>
 
