@@ -387,5 +387,39 @@
     toggle.addEventListener('click', () => nav.classList.toggle('header__nav--open'));
   </script>
 
+
+<script>
+var lpBookingForm = document.querySelector('#hero-booking-form [type="submit"]');
+if (lpBookingForm) {
+lpBookingForm.addEventListener('click', function handler() {
+  gtag('event', 'lp_booking_form_submit');
+  this.removeEventListener('click', handler);
+});
+}
+</script>
+
+<script>
+var lpPhoneLinks = document.querySelectorAll('a[href^="tel:"]');
+if (lpPhoneLinks) {
+lpPhoneLinks.forEach(function(item) {
+  item.addEventListener('click', function handler() {
+    gtag('event', 'lp_phone_link_click');
+    this.removeEventListener('click', handler);
+  });
+});
+}
+</script>
+
+<script>
+var lpBookBtns = document.querySelectorAll('a[href*="survcart.com"]');
+if (lpBookBtns) {
+lpBookBtns.forEach(function(item) {
+  item.addEventListener('click', function handler() {
+    gtag('event', 'lp_book_now_btn_click');
+    this.removeEventListener('click', handler);
+  });
+});
+}
+</script>
 </body>
 </html>
